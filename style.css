@@ -23,6 +23,16 @@ a {
   line-height: 24px;
 }
 
+@keyframes background-switch {
+  100% {
+    background-color: #1c528a;
+  }
+
+  0% {
+    background-color: #e2505c;
+  }
+}
+
 .headline-section {
   display: flex;
   flex-direction: column;
