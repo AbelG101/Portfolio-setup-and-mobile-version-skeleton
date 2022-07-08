@@ -56,6 +56,16 @@ footer .desktop-image1 {
   animation-iteration-count: infinite;
 }
 
+@keyframes background-switch {
+  100% {
+    background-color: #1c528a;
+  }
+
+  0% {
+    background-color: #e2505c;
+  }
+}
+
 .headline-section footer {
   flex-grow: 1;
   flex-basis: 0;
