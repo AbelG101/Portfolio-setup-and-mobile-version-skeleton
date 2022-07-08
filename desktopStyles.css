@@ -45,6 +45,17 @@ footer .desktop-image1 {
   margin: 0;
 }
 
+.link-btn {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  animation: background-switch 1s;
+  animation-iteration-count: infinite;
+}
+
 .headline-section footer {
   flex-grow: 1;
   flex-basis: 0;
