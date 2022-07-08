@@ -1,3 +1,5 @@
+@import url("./desktopStyles.css") screen and (min-device-width: 768px);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +8,10 @@
 
 a {
   text-decoration: none;
+}
+
+.top-nav {
+  display: none;
 }
 
 .link-btn {
@@ -85,7 +91,7 @@ p {
   background-color: #fff;
 }
 
-footer img {
+.headline-section footer img {
   width: 100%;
   margin: 20px 0;
 }
@@ -205,7 +211,7 @@ footer img {
   margin: 20px 0;
 }
 
-.about-section img {
+.about-cards div:not(:last-child) img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -213,7 +219,7 @@ footer img {
   width: 102px;
 }
 
-.about-section div {
+.about-cards div {
   margin: 20px 0;
   padding: 50px 40px;
   position: relative;
@@ -294,4 +300,50 @@ footer img {
 .form-area input:focus,
 .form-area textarea:focus {
   outline: 1px solid #111622;
+}
+
+main > footer {
+  background-color: #1a2236;
+  padding: 20px;
+}
+
+footer h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #92dcdc;
+  margin: 30px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.desktop-image1 {
+  display: none;
+}
+
+.dots-img {
+  display: none;
+}
+
+.works-section-img {
+  display: none;
+}
+
+.about-cards .about-card-img {
+  display: none;
+}
+
+.bottom-right-img {
+  display: none;
 }
