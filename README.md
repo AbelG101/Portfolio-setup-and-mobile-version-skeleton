@@ -17,8 +17,8 @@
 
 👤 **Author1**
 
-- [@AbelG101](https://github.com/AbelG101)
-- [Abel Gebeyehu](https://www.linkedin.com/in/abel-gebeyehu-779743183/)
+- GitHub: [@AbelG101](https://github.com/AbelG101)
+- Twitter: [Abel Gebeyehu](https://www.linkedin.com/in/abel-gebeyehu-779743183/)
 
 
 ## Show your support
