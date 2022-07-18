@@ -26,9 +26,23 @@
     </nav>
     <header>
       <img src="./images/top-left-box.svg" alt="icon">
-      <img class="menu-icon" src="./images/menu.svg" alt="menu-icon">
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="mobile-menu">
+          <img src="./images/dots-mobile.svg" alt="">
+          <ul>
+            <li><a href="#home">Hello</a></li>
+            <li><a href="#portfolio">Porfolio</a></li>
+            <li id="login"><a href="#about" >About</a></li>
+            <li id="signup"><a href="#contact">Contact</a></li>
+          </ul>
+          <img src="./images/menu-bottom.svg" alt="">
+        </div>
+      </div>
     </header>
-    <section class="headline-section">
+    <section id="home" class="headline-section">
       <div class="content">
         <header>
           <h1>Charlie Giorgania</h1>
@@ -44,21 +58,21 @@
         <img src="./images/bottom-image.svg" alt="abstract-image">
       </footer>
     </section>
-    <section class="works-section">
+    <section id="portfolio" class="works-section">
       <div class="projects-container p1">
         <h1>Projects</h1>
         <!-- <img class="dots-img" src="./images/dots.svg" alt="dot-grids"> -->
         <div class="proj-content">
           <img class="project-img" src="./images/Projects-pc-pic1.svg" alt="A laptop computer">
-        <div class="bottom-content">
-          <h3>Project name goes here</h3>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <a class="link-btn see-project-btn" href="#">See this project → </a>
-        </div>
+          <div class="bottom-content">
+            <h3>Project name goes here</h3>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+            </ul>
+            <a class="link-btn see-project-btn" href="#">See this project → </a>
+          </div>
         </div>
       </div>
         <div class="projects-container p2">
@@ -123,7 +137,7 @@
           </div>
         </div>
     </section>
-    <section class="about-section">
+    <section id="about" class="about-section">
       <div class="about-content">
         <h1>About </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
@@ -170,7 +184,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
       <div class="heading-content">
         <img src="./images/top-left-box.svg" alt="simple box">
         <h1>Get started</h1>
@@ -196,5 +210,6 @@
       </ul>
     </footer>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>
