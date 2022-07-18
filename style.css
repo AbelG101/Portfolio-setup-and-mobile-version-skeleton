@@ -106,7 +106,6 @@ footer ul {
   width: 100%;
 }
 
-
 .open .mobile-menu ul {
   display: flex;
   flex-direction: column;
@@ -120,16 +119,16 @@ footer ul li img {
   height: 24px;
 }
 
+.headline-section footer img {
+  width: 100%;
+  margin: 20px 0;
+}
+
 .mobile-menu img:first-child {
   height: 50px;
   width: 50px;
   margin-left: 222px;
   margin-bottom: 25px;
-}
-
-.headline-section footer img {
-  width: 100%;
-  margin: 20px 0;
 }
 
 .mobile-menu img:last-child {
