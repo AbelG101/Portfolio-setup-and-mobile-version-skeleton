@@ -97,6 +97,27 @@ header {
   margin-bottom: 25px;
 }
 
+.mobile-menu img:last-child {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+  text-align: center;
+}
+
+.mobile-menu ul li a {
+  color: #000;
+}
+
+/* mobile-menu */
 .menu-icon {
   margin-right: 10px;
 }
