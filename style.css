@@ -46,6 +46,12 @@ header {
   margin-right: 10px;
 }
 
+.about-cards div {
+  margin: 20px 0;
+  padding: 50px 40px;
+  position: relative;
+}
+
 #hamburger-icon div:not(.mobile-menu) {
   width: 35px;
   height: 3px;
@@ -68,19 +74,6 @@ header {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
-.open .mobile-menu {
-  display: block;
-  background-color: #fff;
-}
-
-.open .mobile-menu ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  list-style-type: none;
-}
-
 .mobile-menu {
   display: none;
   position: absolute;
@@ -90,6 +83,43 @@ header {
   width: 100%;
 }
 
+.open .mobile-menu {
+  display: block;
+  background-color: #fff;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-content ul {
+  display: flex;
+  margin: 20px 5px 20px 0;
+}
+
+.about-section ul {
+  list-style-position: inside;
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+  color: #fff;
+  width: 100%;
+}
+
+
+.open .mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+footer ul li img {
+  width: 24px;
+  height: 24px;
+}
+
 .mobile-menu img:first-child {
   height: 50px;
   width: 50px;
@@ -97,10 +127,19 @@ header {
   margin-bottom: 25px;
 }
 
+.headline-section footer img {
+  width: 100%;
+  margin: 20px 0;
+}
+
 .mobile-menu img:last-child {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+footer ul li {
+  list-style-type: none;
 }
 
 .mobile-menu ul li {
@@ -170,16 +209,6 @@ p {
   background-color: #fff;
 }
 
-footer ul li img {
-  width: 24px;
-  height: 24px;
-}
-
-.headline-section footer img {
-  width: 100%;
-  margin: 20px 0;
-}
-
 .works-section {
   display: grid;
 }
@@ -208,20 +237,6 @@ footer ul li img {
   font-weight: 300;
   font-size: 20px;
   line-height: 80%;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.bottom-content ul {
-  display: flex;
-  margin: 20px 5px 20px 0;
-}
-
-footer ul li {
-  list-style-type: none;
 }
 
 .bottom-content ul li {
@@ -279,14 +294,6 @@ footer ul li {
   margin-top: 50px;
 }
 
-.about-section ul {
-  list-style-position: inside;
-  font-family: 'Poppins', sans-serif;
-  line-height: 30px;
-  color: #fff;
-  width: 100%;
-}
-
 .about-section ul li {
   font-style: normal;
   font-size: 18px;
@@ -310,12 +317,6 @@ footer ul li {
   right: 0;
   height: 102px;
   width: 102px;
-}
-
-.about-cards div {
-  margin: 20px 0;
-  padding: 50px 40px;
-  position: relative;
 }
 
 .languages {
