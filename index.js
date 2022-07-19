@@ -174,6 +174,41 @@ function loadPopUp() {
   });
 }
 
+openPopUpButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const popUp = document.querySelectorAll(button.dataset.popupTarget);
+    openPopUp(popUp[index]);
+  });
+});
+
+overlay.addEventListener("click", () => {
+  const popUps = document.querySelectorAll(".popup-mobile.active");
+  popUps.forEach((popUp) => {
+    closePopUp(popUp);
+  });
+});
+
+closePopUpButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const popUp = button.closest(".popup-mobile");
+    closePopUp(popUp);
+  });
+});
+
+function openPopUp(popUp) {
+  if (popUp == null) return;
+  console.log("hi");
+  popUp.classList.add("active");
+  overlay.classList.add("active");
+}
+
+function closePopUp(popUp) {
+  if (popUp == null) return;
+  popUp.classList.remove("active");
+  overlay.classList.remove("active");
+}
+
+
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
