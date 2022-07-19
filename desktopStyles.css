@@ -126,6 +126,7 @@ main .dots-img {
 .works-section .projects-container {
   display: flex;
   flex-direction: row;
+  position: static;
 }
 
 .works-section .projects-container:nth-last-child(-n+4) .bottom-content,

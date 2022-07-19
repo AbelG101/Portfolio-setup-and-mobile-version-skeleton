@@ -216,6 +216,7 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .project-img {
@@ -255,6 +256,7 @@ p {
   padding: 10px 15px;
   color: #fff;
   border: 1px solid #fff;
+  background: transparent;
 }
 
 .see-project-btn:hover {
@@ -378,7 +380,6 @@ p {
 }
 
 /* popup-mobile */
-
 
 .get-cv-btn:hover {
   background-color: hsl(222, 31%, 30%);
