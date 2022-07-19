@@ -208,7 +208,6 @@ function closePopUp(popUp) {
   overlay.classList.remove("active");
 }
 
-
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
