@@ -79,7 +79,11 @@ const projects = [
   },
 ];
 
+window.onload = loadPopUp();
 
+const openPopUpButtons = document.querySelectorAll("[data-popup-target]");
+const closePopUpButtons = document.querySelectorAll("[data-close-button]");
+const overlay = document.getElementById("overlay");
 
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
