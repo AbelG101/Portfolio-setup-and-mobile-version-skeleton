@@ -106,6 +106,14 @@ footer ul {
   width: 100%;
 }
 
+.popup-mobile ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
 .open .mobile-menu ul {
   display: flex;
   flex-direction: column;
@@ -216,6 +224,7 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .project-img {
@@ -255,6 +264,7 @@ p {
   padding: 10px 15px;
   color: #fff;
   border: 1px solid #fff;
+  background: transparent;
 }
 
 .see-project-btn:hover {
@@ -274,6 +284,110 @@ p {
 .about-section .get-cv-btn {
   margin-bottom: 20px;
 }
+
+/* popup-mobile */
+
+.popup-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  z-index: 10;
+  transition: 200ms ease-in-out;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #1a2236;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.popup-mobile.active {
+  transform: scale(1);
+}
+
+.popup-mobile .close-button {
+  float: right;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 3.25rem;
+}
+
+.popup-mobile h2 {
+  clear: both;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+}
+
+.popup-mobile ul li {
+  padding: 5px 8px;
+  border: 1px solid #1a2236;
+}
+
+#pop-up-img-pc {
+  width: 100%;
+  height: auto;
+}
+
+.popup-mobile p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 20px 0;
+}
+
+.popup-mobile .popup-content > a {
+  width: 80%;
+  border: 1px solid #1a2236;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1a2236;
+  display: block;
+  margin: 10px auto;
+}
+
+.about-cards div:not(:last-child) img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 102px;
+  width: 102px;
+}
+
+.works-section .projects-container .popup-mobile a img {
+  float: right;
+  max-width: 22px;
+  height: 22px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nxt-prev-proj {
+  display: none;
+}
+
+/* popup-mobile */
 
 .get-cv-btn:hover {
   background-color: hsl(222, 31%, 30%);
@@ -308,14 +422,6 @@ p {
   font-size: 20px;
   line-height: 30px;
   margin: 20px 0;
-}
-
-.about-cards div:not(:last-child) img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 102px;
-  width: 102px;
 }
 
 .languages {
