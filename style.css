@@ -275,6 +275,53 @@ p {
   margin-bottom: 20px;
 }
 
+/* popup-mobile */
+
+.popup-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  z-index: 10;
+  transition: 200ms ease-in-out;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #1a2236;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.popup-mobile.active {
+  transform: scale(1);
+}
+
+.popup-mobile .close-button {
+  float: right;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 3.25rem;
+}
+
+.popup-mobile h2 {
+  clear: both;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+}
+
+.popup-mobile ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* popup-mobile */
+
 .get-cv-btn:hover {
   background-color: hsl(222, 31%, 30%);
 }
