@@ -81,7 +81,89 @@ const projects = [
 
 function loadPopUp() {
   const popUpContainers = document.getElementsByClassName('popup-mobile');
-
+  const worksSection = document.querySelector('.works-section');
+  worksSection.innerHTML = `<div class="projects-container p1">
+  <h1>Projects</h1>
+  <div class="proj-content">
+    <img class="project-img" src="./images/Projects-pc-pic1.svg" alt="A laptop computer">
+    <div class="bottom-content">
+      <h3>${projects[0].name}</h3>
+      <ul>
+        <li>${projects[0].technologies[0]}</li>
+        <li>Ruby on Rails</li>
+        <li>${projects[2].technologies[2]}</li>
+      </ul>
+      <button data-popup-target=".popup-mobile" class="link-btn see-project-btn">See this project → </button>
+    </div>
+  </div>
+  <div class="popup-mobile"> </div>
+</div>
+  <div class="projects-container p2">
+    <img class="project-img" src="./images/Projects-pc-pic2.svg" alt="A laptop computer">
+    <img class="works-section-img middle-img" src="./images/woks-section-middle.png" alt="boxes">
+    <div class="bottom-content">
+      <h3>${projects[1].name}</h3>
+      <ul>
+        <li>${projects[0].technologies[0]}</li>
+        <li>${projects[1].technologies[1]}</li>
+        <li>${projects[2].technologies[2]}</li>
+      </ul>
+      <button data-popup-target=".popup-mobile" class="link-btn see-project-btn">See this project → </button>
+    </div>
+    <div class="popup-mobile"> </div>
+  </div>
+  <div class="projects-container p3">
+    <img class="project-img" src="./images/Projects-pc-pic3.svg" alt="A laptop computer">
+    <div class="bottom-content">
+      <h3>${projects[2].name}</h3>
+      <ul>
+        <li>${projects[0].technologies[0]}</li>
+        <li>${projects[1].technologies[1]}</li>
+        <li>${projects[2].technologies[2]}</li>
+      </ul>
+      <button data-popup-target=".popup-mobile" class="link-btn see-project-btn">See this project → </button>
+    </div>
+    <div class="popup-mobile"> </div>
+  </div>
+  <div class="projects-container p4">
+    <img class="project-img" src="./images/Projects-pc-pic4.svg" alt="A laptop computer">
+    <div class="bottom-content">
+      <h3>${projects[3].name}</h3>
+      <ul>
+        <li>${projects[0].technologies[0]}</li>
+        <li>${projects[1].technologies[1]}</li>
+        <li>${projects[2].technologies[2]}</li>
+      </ul>
+      <button data-popup-target=".popup-mobile" class="link-btn see-project-btn">See this project → </button>
+    </div>
+    <div class="popup-mobile"> </div>
+  </div>
+  <div class="projects-container p5">
+    <img class="project-img" src="./images/Projects-pc-pic5.svg" alt="A laptop computer">
+    <div class="bottom-content">
+      <h3>${projects[4].name}</h3>
+      <ul>
+        <li>${projects[0].technologies[0]}</li>
+        <li>${projects[1].technologies[1]}</li>
+        <li>${projects[2].technologies[2]}</li>
+      </ul>
+      <button data-popup-target=".popup-mobile" class="link-btn see-project-btn">See this project → </button>
+    </div>
+    <div class="popup-mobile"> </div>
+  </div>
+  <div class="projects-container p6">
+    <img class="project-img" src="./images/Projects-pc-pic6.svg" alt="A laptop computer">
+    <div class="bottom-content">
+      <h3>${projects[5].name}</h3>
+      <ul>
+        <li>${projects[0].technologies[0]}</li>
+        <li>${projects[1].technologies[1]}</li>
+        <li>${projects[2].technologies[2]}</li>
+      </ul>
+      <button data-popup-target=".popup-mobile" class="link-btn see-project-btn">See this project → </button>
+    </div>
+    <div class="popup-mobile"> </div>
+  </div>`;
   projects.forEach((project, index) => {
     const closeBtn = document.createElement('button');
     const h2 = document.createElement('h2');
@@ -174,7 +256,6 @@ const overlay = document.getElementById('overlay');
 
 function openPopUp(popUp) {
   if (popUp == null) return;
-  console.log('hi');
   popUp.classList.add('active');
   overlay.classList.add('active');
 }
