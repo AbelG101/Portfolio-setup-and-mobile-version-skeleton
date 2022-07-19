@@ -273,6 +273,10 @@ main .works-section {
 .popup-content .nxt-prev-proj a {
   cursor: pointer;
   color: #1a2236;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 /* popup-mobile */
