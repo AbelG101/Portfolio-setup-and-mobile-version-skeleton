@@ -320,7 +320,65 @@ p {
   margin: 20px 0;
 }
 
+.popup-mobile ul li {
+  padding: 5px 8px;
+  border: 1px solid #1a2236;
+}
+
+#pop-up-img-pc {
+  width: 100%;
+  height: auto;
+}
+
+.popup-mobile p {  
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 20px 0;
+}
+
+.popup-mobile .popup-content > a {
+  width: 80%;
+  border: 1px solid #1a2236 ;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #1a2236;
+  display: block;
+  margin: 10px auto;
+}
+
+.works-section .projects-container .popup-mobile a img {
+  float: right;
+  max-width: 22px;
+  height: 22px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nxt-prev-proj {
+  display: none;
+}
+
 /* popup-mobile */
+
 
 .get-cv-btn:hover {
   background-color: hsl(222, 31%, 30%);
