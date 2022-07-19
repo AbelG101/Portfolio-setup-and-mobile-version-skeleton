@@ -126,7 +126,7 @@ function loadPopUp() {
 
     h2.appendChild(h2Txt);
     closeBtn.appendChild(closeBtnTxt);
-    for (let i = 0; i < 3; i+=1) {
+    for (let i = 0; i < 3; i += 1) {
       const liTxt = document.createTextNode(project.technologies[i]);
       if (i === 0) {
         li1.appendChild(liTxt);
