@@ -106,6 +106,14 @@ footer ul {
   width: 100%;
 }
 
+.popup-mobile ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
 .open .mobile-menu ul {
   display: flex;
   flex-direction: column;
@@ -314,14 +322,6 @@ p {
   line-height: 80%;
 }
 
-.popup-mobile ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-}
-
 .popup-mobile ul li {
   padding: 5px 8px;
   border: 1px solid #1a2236;
@@ -332,7 +332,7 @@ p {
   height: auto;
 }
 
-.popup-mobile p {  
+.popup-mobile p {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -341,7 +341,7 @@ p {
 
 .popup-mobile .popup-content > a {
   width: 80%;
-  border: 1px solid #1a2236 ;
+  border: 1px solid #1a2236;
   padding: 5px 10px;
   font-weight: 500;
   font-size: 18px;
@@ -350,6 +350,14 @@ p {
   color: #1a2236;
   display: block;
   margin: 10px auto;
+}
+
+.about-cards div:not(:last-child) img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 102px;
+  width: 102px;
 }
 
 .works-section .projects-container .popup-mobile a img {
@@ -366,7 +374,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
@@ -414,14 +422,6 @@ p {
   font-size: 20px;
   line-height: 30px;
   margin: 20px 0;
-}
-
-.about-cards div:not(:last-child) img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 102px;
-  width: 102px;
 }
 
 .languages {
