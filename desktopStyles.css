@@ -219,6 +219,64 @@ main .works-section {
   position: relative;
 }
 
+/* popup-mobile */
+
+.works-section .popup-mobile {
+  padding: 50px;
+  border: 50px solid #1a2236;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%) scale(0) 
+}
+
+.works-section .popup-mobile.active {
+  transform: translate(-50%) scale(1);
+}
+
+.works-section .popup-mobile h2 {
+  font-size: 60px;
+}
+
+.works-section .popup-mobile ul {
+  display: block;
+}
+
+.works-section .popup-mobile ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.works-section .popup-content {
+  margin: 0 150px;
+}
+
+.works-section .popup-mobile .popup-content > a {
+  display: inline-block;
+  width: 40%;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.works-section .popup-mobile .popup-content > a:first-of-type:hover {
+  border: 1px solid #0000ff;
+}
+
+.works-section .popup-mobile .popup-content > a:last-of-type:hover {
+  border: 1px solid #cb4079;
+}
+.popup-mobile .popup-content .nxt-prev-proj {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.popup-content .nxt-prev-proj a {
+  cursor: pointer;
+  color: #1a2236;
+}
+
+/* popup-mobile */
+
 /* ------------------About-section---------------------- */
 
 main .about-section {
