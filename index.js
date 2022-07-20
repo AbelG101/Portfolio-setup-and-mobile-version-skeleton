@@ -292,3 +292,7 @@ function toggleMobileMenu(menu) {
 }
 
 console.log(toggleMobileMenu);
+
+const form = document.querySelector('.form-area');
+const email = document.getElementById('email');
+const errElt = document.getElementById('error-element');
