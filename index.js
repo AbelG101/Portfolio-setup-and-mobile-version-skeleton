@@ -244,7 +244,6 @@ function loadPopUp() {
     popUpContainers[index].appendChild(img1);
     popUpContainers[index].appendChild(div);
 
-    console.log(h2);
   });
 }
 
@@ -291,19 +290,17 @@ function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
 
-console.log(toggleMobileMenu);
-
 const form = document.querySelector('.form-area');
 const email = document.getElementById('email');
 const errElt = document.getElementById('error-element');
 
 form.addEventListener('submit', (e) => {
-  if ( ! (email.value == String(email.value).toLowerCase()) ) {
+  if (!(email.value === String(email.value).toLowerCase())) {
     e.preventDefault();
     errElt.innerText = 'Invalid email, form not sent.';
     errElt.style.color = 'red';
   }
   else {
-    errElt.innerText = "";
+    errElt.innerText = '';
   }
-})
+});
