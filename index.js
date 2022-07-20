@@ -1,87 +1,87 @@
 const projects = [
   {
-    name: "Project 1",
+    name: 'Project 1',
     desription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     featuredImg: [
-      "images/popup.svg",
-      "images/ic_link.svg",
-      "images/github-logo.svg",
+      'images/popup.svg',
+      'images/ic_link.svg',
+      'images/github-logo.svg',
     ],
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkLive: "#",
-    linkSource: "#",
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkLive: '#',
+    linkSource: '#',
   },
   {
-    name: "Project 2",
+    name: 'Project 2',
     desription:
-      "2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      '2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     featuredImg: [
-      "images/popup.svg",
-      "images/ic_link.svg",
-      "images/github-logo.svg",
+      'images/popup.svg',
+      'images/ic_link.svg',
+      'images/github-logo.svg',
     ],
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkLive: "#",
-    linkSource: "#",
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkLive: '#',
+    linkSource: '#',
   },
   {
-    name: "Project 3",
+    name: 'Project 3',
     desription:
-      "3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      '3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     featuredImg: [
-      "images/popup.svg",
-      "images/ic_link.svg",
-      "images/github-logo.svg",
+      'images/popup.svg',
+      'images/ic_link.svg',
+      'images/github-logo.svg',
     ],
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkLive: "#",
-    linkSource: "#",
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkLive: '#',
+    linkSource: '#',
   },
   {
-    name: "Project 4",
+    name: 'Project 4',
     desription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     featuredImg: [
-      "images/popup.svg",
-      "images/ic_link.svg",
-      "images/github-logo.svg",
+      'images/popup.svg',
+      'images/ic_link.svg',
+      'images/github-logo.svg',
     ],
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkLive: "#",
-    linkSource: "#",
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkLive: '#',
+    linkSource: '#',
   },
   {
-    name: "Project 5",
+    name: 'Project 5',
     desription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     featuredImg: [
-      "images/popup.svg",
-      "images/ic_link.svg",
-      "images/github-logo.svg",
+      'images/popup.svg',
+      'images/ic_link.svg',
+      'images/github-logo.svg',
     ],
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkLive: "#",
-    linkSource: "#",
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkLive: '#',
+    linkSource: '#',
   },
   {
-    name: "Project 6",
+    name: 'Project 6',
     desription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi',
     featuredImg: [
-      "images/popup.svg",
-      "images/ic_link.svg",
-      "images/github-logo.svg",
+      'images/popup.svg',
+      'images/ic_link.svg',
+      'images/github-logo.svg',
     ],
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkLive: "#",
-    linkSource: "#",
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkLive: '#',
+    linkSource: '#',
   },
 ];
 
 function loadPopUp() {
-  const popUpContainers = document.getElementsByClassName("popup-mobile");
-  const worksSection = document.querySelector(".works-section");
+  const popUpContainers = document.getElementsByClassName('popup-mobile');
+  const worksSection = document.querySelector('.works-section');
   worksSection.innerHTML = `<div class="projects-container p1">
   <h1>Projects</h1>
   <div class="proj-content">
@@ -165,46 +165,46 @@ function loadPopUp() {
     <div class="popup-mobile"> </div>
   </div>`;
   projects.forEach((project, index) => {
-    const closeBtn = document.createElement("button");
-    const h2 = document.createElement("h2");
-    const ul = document.createElement("ul");
-    const li1 = document.createElement("li");
-    const li2 = document.createElement("li");
-    const li3 = document.createElement("li");
-    const img1 = document.createElement("img");
-    const img2 = document.createElement("img");
-    const img3 = document.createElement("img");
-    const div = document.createElement("div");
-    const divNxtPrevProj = document.createElement("div");
-    const p = document.createElement("p");
-    const linkLive = document.createElement("a");
-    const linkSource = document.createElement("a");
-    const nxtProj = document.createElement("a");
-    const prevProj = document.createElement("a");
+    const closeBtn = document.createElement('button');
+    const h2 = document.createElement('h2');
+    const ul = document.createElement('ul');
+    const li1 = document.createElement('li');
+    const li2 = document.createElement('li');
+    const li3 = document.createElement('li');
+    const img1 = document.createElement('img');
+    const img2 = document.createElement('img');
+    const img3 = document.createElement('img');
+    const div = document.createElement('div');
+    const divNxtPrevProj = document.createElement('div');
+    const p = document.createElement('p');
+    const linkLive = document.createElement('a');
+    const linkSource = document.createElement('a');
+    const nxtProj = document.createElement('a');
+    const prevProj = document.createElement('a');
 
-    closeBtn.setAttribute("data-close-button", "");
-    closeBtn.setAttribute("class", "close-button");
-    img1.setAttribute("id", "pop-up-img-pc");
-    img1.setAttribute("src", project.featuredImg[0]);
-    img1.setAttribute("alt", "laptop-computer");
-    img2.setAttribute("src", project.featuredImg[1]);
-    img2.setAttribute("alt", "ic-link");
-    img3.setAttribute("src", project.featuredImg[2]);
-    img3.setAttribute("alt", "github-logo");
-    linkLive.setAttribute("href", "#");
-    linkSource.setAttribute("href", "#");
-    nxtProj.setAttribute("href", "#");
-    prevProj.setAttribute("href", "#");
-    div.setAttribute("class", "popup-content");
-    divNxtPrevProj.setAttribute("class", "nxt-prev-proj");
+    closeBtn.setAttribute('data-close-button', '');
+    closeBtn.setAttribute('class', 'close-button');
+    img1.setAttribute('id', 'pop-up-img-pc');
+    img1.setAttribute('src', project.featuredImg[0]);
+    img1.setAttribute('alt', 'laptop-computer');
+    img2.setAttribute('src', project.featuredImg[1]);
+    img2.setAttribute('alt', 'ic-link');
+    img3.setAttribute('src', project.featuredImg[2]);
+    img3.setAttribute('alt', 'github-logo');
+    linkLive.setAttribute('href', '#');
+    linkSource.setAttribute('href', '#');
+    nxtProj.setAttribute('href', '#');
+    prevProj.setAttribute('href', '#');
+    div.setAttribute('class', 'popup-content');
+    divNxtPrevProj.setAttribute('class', 'nxt-prev-proj');
 
-    const closeBtnTxt = document.createTextNode(" \u00D7");
+    const closeBtnTxt = document.createTextNode(' \u00D7');
     const h2Txt = document.createTextNode(project.name);
     const paraTxt = document.createTextNode(project.desription);
-    const linkLiveTxt = document.createTextNode("See Live");
-    const linkSrcTxt = document.createTextNode("See Source");
-    const nxtProjTxt = document.createTextNode("Next  project →");
-    const prevProjTxt = document.createTextNode("← Previous project");
+    const linkLiveTxt = document.createTextNode('See Live');
+    const linkSrcTxt = document.createTextNode('See Source');
+    const nxtProjTxt = document.createTextNode('Next  project →');
+    const prevProjTxt = document.createTextNode('← Previous project');
 
     h2.appendChild(h2Txt);
     closeBtn.appendChild(closeBtnTxt);
@@ -248,54 +248,54 @@ function loadPopUp() {
 
 window.onload = loadPopUp();
 
-const openPopUpButtons = document.querySelectorAll("[data-popup-target]");
-const closePopUpButtons = document.querySelectorAll("[data-close-button]");
-const overlay = document.getElementById("overlay");
+const openPopUpButtons = document.querySelectorAll('[data-popup-target]');
+const closePopUpButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
 function openPopUp(popUp) {
   if (popUp == null) return;
-  popUp.classList.add("active");
-  overlay.classList.add("active");
+  popUp.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closePopUp(popUp) {
   if (popUp == null) return;
-  popUp.classList.remove("active");
-  overlay.classList.remove("active");
+  popUp.classList.remove('active');
+  overlay.classList.remove('active');
 }
 
 openPopUpButtons.forEach((button, index) => {
-  button.addEventListener("click", () => {
+  button.addEventListener('click', () => {
     const popUp = document.querySelectorAll(button.dataset.popupTarget);
     openPopUp(popUp[index]);
   });
 });
 
-overlay.addEventListener("click", () => {
-  const popUps = document.querySelectorAll(".popup-mobile.active");
+overlay.addEventListener('click', () => {
+  const popUps = document.querySelectorAll('.popup-mobile.active');
   popUps.forEach((popUp) => {
     closePopUp(popUp);
   });
 });
 
 closePopUpButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const popUp = button.closest(".popup-mobile");
+  button.addEventListener('click', () => {
+    const popUp = button.closest('.popup-mobile');
     closePopUp(popUp);
   });
 });
 
 function toggleMobileMenu(menu) {
-  menu.classList.toggle("open");
+  menu.classList.toggle('open');
 }
 
 console.log(toggleMobileMenu);
 
-const form = document.querySelector(".form-area");
-const email = document.getElementById("email");
-const errElt = document.getElementById("error-element");
+const form = document.querySelector('.form-area');
+const email = document.getElementById('email');
+const errElt = document.getElementById('error-element');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   if (!(email.value === String(email.value).toLowerCase())) {
     e.preventDefault();
     errElt.innerText = "Invalid email, form not sent.";
