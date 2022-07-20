@@ -3,8 +3,8 @@
 
 # Portfolio mobile version skeleton
 
-> This is a replica of a figma portifoilo template #5 for the mobile version made with html for the content and css for the styling. 
-> [Checkout the online version](https://abelg101.github.io/)
+> This is a replica of a portfolio design from figma, template #5 made with html, css & javascript. 
+> [Checkout the live version](https://abelg101.github.io/Portfolio-setup-and-mobile-version-skeleton/)
 
 ## Built With
 
