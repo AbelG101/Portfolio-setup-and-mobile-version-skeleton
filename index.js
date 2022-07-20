@@ -298,9 +298,9 @@ const errElt = document.getElementById('error-element');
 form.addEventListener('submit', (e) => {
   if (!(email.value === String(email.value).toLowerCase())) {
     e.preventDefault();
-    errElt.innerText = "Invalid email, form not sent.";
-    errElt.style.color = "red";
+    errElt.innerText = 'Invalid email, form not sent.';
+    errElt.style.color = 'red';
   } else {
-    errElt.innerText = "";
+    errElt.innerText = '';
   }
 });
