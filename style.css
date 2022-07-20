@@ -531,3 +531,11 @@ footer h4 {
 .bottom-right-img {
   display: none;
 }
+
+#error-element {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
