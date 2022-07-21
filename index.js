@@ -313,9 +313,9 @@ const name = document.getElementById('name');
 const txtArea = document.getElementById('msg-area');
 
 function getFormData() {
-  var lsForm = localStorage.getItem('Form values: ');
-  var formDetails = JSON.parse(lsForm);
-  if (formDetails !== null){
+  const lsForm = localStorage.getItem('Form values: ');
+  const formDetails = JSON.parse(lsForm);
+  if (formDetails !== null) {
     name.value = formDetails.name;
     email.value = formDetails.email;
     txtArea.value = formDetails.txtArea;
