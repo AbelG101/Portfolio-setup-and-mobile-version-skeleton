@@ -311,4 +311,16 @@ let formObj = {
   comment: String
 }
 
+function saveOnLocalStorage(event) {
+  event.preventDefault();
+  let name = document.getElementById('name').value; 
+  let _email = email.value; 
+  let txtArea = document.getElementById('msg-area').value;
+
+  formObj.name = name;
+  formObj.email = _email;
+  formObj.txtArea = txtArea;
+  
+  localStorage.setItem("Form values: " ,JSON.stringify(formObj));
+}
 
