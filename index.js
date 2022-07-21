@@ -296,6 +296,14 @@ const inputElts = document.querySelectorAll('input');
 const email = document.getElementById('email');
 const errElt = document.getElementById('error-element');
 
+function saveOnLocalStorage(event) {
+  event.preventDefault();
+  formObj.name = name.value;
+  formObj.email = email.value;
+  formObj.txtArea = txtArea.value;
+  localStorage.setItem('Form values: ', JSON.stringify(formObj));
+}
+
 form.addEventListener('submit', (e) => {
   if (!(email.value === String(email.value).toLowerCase())) {
     e.preventDefault();
@@ -311,7 +319,7 @@ inputElts.forEach((inputElt) => {
   inputElt.addEventListener('change', (e) => saveOnLocalStorage(e));
 });
 
-txtArea.addEventListener('change', (e) =>saveOnLocalStorage(e) )
+txtArea.addEventListener('change', (e) => saveOnLocalStorage(e));
 
 const formObj = {
   name: String,
@@ -328,16 +336,6 @@ function getFormData() {
     txtArea.value = formDetails.txtArea;
   }
 }
-
-function saveOnLocalStorage(event) {
-  event.preventDefault();
-  formObj.name = name.value;
-  formObj.email = email.value;
-  formObj.txtArea = txtArea.value;
-  localStorage.setItem('Form values: ', JSON.stringify(formObj));
-}
-
-console.log(saveOnLocalStorage);
 
 window.onload = () => {
   loadPopUp();
