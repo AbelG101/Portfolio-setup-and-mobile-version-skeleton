@@ -246,8 +246,6 @@ function loadPopUp() {
   });
 }
 
-window.onload = loadPopUp();
-
 const openPopUpButtons = document.querySelectorAll('[data-popup-target]');
 const closePopUpButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -292,8 +290,25 @@ function toggleMobileMenu(menu) {
 console.log(toggleMobileMenu);
 
 const form = document.querySelector('.form-area');
+const name = document.getElementById('name');
+const txtArea = document.getElementById('msg-area');
+const inputElts = document.querySelectorAll('input');
 const email = document.getElementById('email');
 const errElt = document.getElementById('error-element');
+
+const formObj = {
+  name: String,
+  email: String,
+  comment: String,
+};
+
+function saveOnLocalStorage(event) {
+  event.preventDefault();
+  formObj.name = name.value;
+  formObj.email = email.value;
+  formObj.txtArea = txtArea.value;
+  localStorage.setItem('Form values: ', JSON.stringify(formObj));
+}
 
 form.addEventListener('submit', (e) => {
   if (!(email.value === String(email.value).toLowerCase())) {
@@ -303,4 +318,26 @@ form.addEventListener('submit', (e) => {
   } else {
     errElt.innerText = '';
   }
+  saveOnLocalStorage(e);
 });
+
+inputElts.forEach((inputElt) => {
+  inputElt.addEventListener('change', (e) => saveOnLocalStorage(e));
+});
+
+txtArea.addEventListener('change', (e) => saveOnLocalStorage(e));
+
+function getFormData() {
+  const lsForm = localStorage.getItem('Form values: ');
+  const formDetails = JSON.parse(lsForm);
+  if (formDetails !== null) {
+    name.value = formDetails.name;
+    email.value = formDetails.email;
+    txtArea.value = formDetails.txtArea;
+  }
+}
+
+window.onload = () => {
+  loadPopUp();
+  getFormData();
+};
