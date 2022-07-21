@@ -296,6 +296,12 @@ const inputElts = document.querySelectorAll('input');
 const email = document.getElementById('email');
 const errElt = document.getElementById('error-element');
 
+const formObj = {
+  name: String,
+  email: String,
+  comment: String,
+};
+
 function saveOnLocalStorage(event) {
   event.preventDefault();
   formObj.name = name.value;
@@ -320,12 +326,6 @@ inputElts.forEach((inputElt) => {
 });
 
 txtArea.addEventListener('change', (e) => saveOnLocalStorage(e));
-
-const formObj = {
-  name: String,
-  email: String,
-  comment: String,
-};
 
 function getFormData() {
   const lsForm = localStorage.getItem('Form values: ');
