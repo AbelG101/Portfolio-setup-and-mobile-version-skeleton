@@ -305,22 +305,21 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-let formObj = {
+const formObj = {
   name: String,
   email: String,
-  comment: String
-}
+  comment: String,
+};
 
 function saveOnLocalStorage(event) {
   event.preventDefault();
-  let name = document.getElementById('name').value; 
-  let _email = email.value; 
-  let txtArea = document.getElementById('msg-area').value;
-
+  const name = document.getElementById('name').value;
+  const emailLocal = email.value;
+  const txtArea = document.getElementById('msg-area').value;
   formObj.name = name;
-  formObj.email = _email;
+  formObj.email = emailLocal;
   formObj.txtArea = txtArea;
-  
-  localStorage.setItem("Form values: " ,JSON.stringify(formObj));
+  localStorage.setItem('Form values: ', JSON.stringify(formObj));
 }
 
+console.log(saveOnLocalStorage)
