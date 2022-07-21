@@ -114,10 +114,10 @@
         <h1>Get started</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
       </div>
-      <form onsubmit="saveOnLocalStorage(event)" action="https://formspree.io/f/mdobreeb" method="post" class="form-area">
-        <input onchange="saveOnLocalStorage(event)" type="text" name="name" maxlength="30" id="name" placeholder="Your name" required>
-        <input onchange="saveOnLocalStorage(event)" type="email" name="email" id="email" placeholder="Your email" required>
-        <textarea onchange="saveOnLocalStorage(event)" id="msg-area" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500"></textarea>
+      <form action="https://formspree.io/f/mdobreeb" method="post" class="form-area">
+        <input type="text" name="name" maxlength="30" id="name" placeholder="Your name" required>
+        <input type="email" name="email" id="email" placeholder="Your email" required>
+        <textarea id="msg-area" cols="30" rows="10" placeholder="Enter your message here..." maxlength="500"></textarea>
         <button class="dark-bg-btn start-collab-btn" type="submit">Start collaboration</button>
         <span id="error-element"></span>
       </form>
