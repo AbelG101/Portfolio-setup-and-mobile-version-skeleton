@@ -246,8 +246,6 @@ function loadPopUp() {
   });
 }
 
-window.onload = loadPopUp();
-
 const openPopUpButtons = document.querySelectorAll('[data-popup-target]');
 const closePopUpButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -311,15 +309,30 @@ const formObj = {
   comment: String,
 };
 
+const name = document.getElementById('name');
+const txtArea = document.getElementById('msg-area');
+
+function getFormData() {
+  var lsForm = localStorage.getItem('Form values: ');
+  var formDetails = JSON.parse(lsForm);
+  if (formDetails !== null){
+    name.value = formDetails.name;
+    email.value = formDetails.email;
+    txtArea.value = formDetails.txtArea;
+  }
+}
+
 function saveOnLocalStorage(event) {
   event.preventDefault();
-  const name = document.getElementById('name').value;
-  const emailLocal = email.value;
-  const txtArea = document.getElementById('msg-area').value;
-  formObj.name = name;
-  formObj.email = emailLocal;
-  formObj.txtArea = txtArea;
+  formObj.name = name.value;
+  formObj.email = email.value;
+  formObj.txtArea = txtArea.value;
   localStorage.setItem('Form values: ', JSON.stringify(formObj));
 }
 
 console.log(saveOnLocalStorage);
+
+window.onload = () => {
+  loadPopUp();
+  getFormData();
+};
