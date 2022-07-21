@@ -304,3 +304,11 @@ form.addEventListener('submit', (e) => {
     errElt.innerText = '';
   }
 });
+
+let formObj = {
+  name: String,
+  email: String,
+  comment: String
+}
+
+
