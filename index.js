@@ -290,6 +290,9 @@ function toggleMobileMenu(menu) {
 console.log(toggleMobileMenu);
 
 const form = document.querySelector('.form-area');
+const name = document.getElementById('name');
+const txtArea = document.getElementById('msg-area');
+const inputElts = document.querySelectorAll('input');
 const email = document.getElementById('email');
 const errElt = document.getElementById('error-element');
 
@@ -301,16 +304,20 @@ form.addEventListener('submit', (e) => {
   } else {
     errElt.innerText = '';
   }
+  saveOnLocalStorage(e);
 });
+
+inputElts.forEach((inputElt) => {
+  inputElt.addEventListener('change', (e) => saveOnLocalStorage(e));
+});
+
+txtArea.addEventListener('change', (e) =>saveOnLocalStorage(e) )
 
 const formObj = {
   name: String,
   email: String,
   comment: String,
 };
-
-const name = document.getElementById('name');
-const txtArea = document.getElementById('msg-area');
 
 function getFormData() {
   const lsForm = localStorage.getItem('Form values: ');
