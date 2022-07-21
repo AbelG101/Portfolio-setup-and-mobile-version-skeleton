@@ -246,49 +246,6 @@ function loadPopUp() {
   });
 }
 
-const openPopUpButtons = document.querySelectorAll('[data-popup-target]');
-const closePopUpButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
-
-function openPopUp(popUp) {
-  if (popUp == null) return;
-  popUp.classList.add('active');
-  overlay.classList.add('active');
-}
-
-function closePopUp(popUp) {
-  if (popUp == null) return;
-  popUp.classList.remove('active');
-  overlay.classList.remove('active');
-}
-
-openPopUpButtons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    const popUp = document.querySelectorAll(button.dataset.popupTarget);
-    openPopUp(popUp[index]);
-  });
-});
-
-overlay.addEventListener('click', () => {
-  const popUps = document.querySelectorAll('.popup-mobile.active');
-  popUps.forEach((popUp) => {
-    closePopUp(popUp);
-  });
-});
-
-closePopUpButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const popUp = button.closest('.popup-mobile');
-    closePopUp(popUp);
-  });
-});
-
-function toggleMobileMenu(menu) {
-  menu.classList.toggle('open');
-}
-
-console.log(toggleMobileMenu);
-
 const form = document.querySelector('.form-area');
 const name = document.getElementById('name');
 const txtArea = document.getElementById('msg-area');
@@ -337,7 +294,52 @@ function getFormData() {
   }
 }
 
-window.onload = () => {
+window.onload = onPageLoad();
+
+function onPageLoad() {
   loadPopUp();
   getFormData();
-};
+}
+
+const openPopUpButtons = document.querySelectorAll('[data-popup-target]');
+const closePopUpButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+function openPopUp(popUp) {
+  if (popUp == null) return;
+  popUp.classList.add('active');
+  overlay.classList.add('active');
+}
+
+function closePopUp(popUp) {
+  if (popUp == null) return;
+  popUp.classList.remove('active');
+  overlay.classList.remove('active');
+}
+
+openPopUpButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const popUp = document.querySelectorAll(button.dataset.popupTarget);
+    openPopUp(popUp[index]);
+  });
+});
+
+overlay.addEventListener('click', () => {
+  const popUps = document.querySelectorAll('.popup-mobile.active');
+  popUps.forEach((popUp) => {
+    closePopUp(popUp);
+  });
+});
+
+closePopUpButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const popUp = button.closest('.popup-mobile');
+    closePopUp(popUp);
+  });
+});
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}
+
+console.log(toggleMobileMenu);
