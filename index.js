@@ -322,4 +322,4 @@ function saveOnLocalStorage(event) {
   localStorage.setItem('Form values: ', JSON.stringify(formObj));
 }
 
-console.log(saveOnLocalStorage)
+console.log(saveOnLocalStorage);
